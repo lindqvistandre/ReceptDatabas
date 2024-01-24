@@ -28,13 +28,11 @@ namespace ReceptDatabas.Services
         public async Task UpdateUserAsync(User user)
         {
             await _userRepository.UpdateUserAsync(user);
-            // Här antar vi att uppdateringen lyckades utan att returnera något specifikt.
         }
 
         public async Task DeleteUserAsync(int userId)
         {
             await _userRepository.DeleteUserAsync(userId);
-            // Här antar vi att borttagningen lyckades utan att returnera något specifikt.
         }
     }
 }
